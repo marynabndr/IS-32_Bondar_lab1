@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ЛАБОРАТОРНА РОБОТА №1</title>
 </head>
 <body>
-    <h1>ЛАБОРАТОРНА РОБОТА №1</h1>
-    <h3>Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
-        РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
-    </h3>
-    <h3>Мета: придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
-            Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
-    </h3>
-    <img src="./images/Лого.png" width="140; hight=140; alt=Логотип;">
-    <h2>Створи свій затишний куточок разом з нами!</h2>
-    <img src="./images/hero.jpg" width="400" height="250" alt="Інтер'єр">
+    <header>
+        <h1>ЛАБОРАТОРНА РОБОТА №1</h1>
+        <br>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#">Каталог товарів</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Кошик</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="./images/Лого.png" width="140" height="110" alt="Логотип">
+    </header>
+
+    <main>
+        <h2>Створи свій затишний куточок разом з нами!</h2>
+        <img src="./images/hero.jpg" width="400" height="250" alt="Інтер'єр">
+
         <h2>Лідери продажу</h2>
         <table border="1" cellpadding="10">
             <tr>
@@ -41,6 +52,7 @@
                 </td>
             </tr>
         </table>
+
         <h2>Відгуки клієнтів</h2>
         <ul>
             <li>“Просто в захваті від свого нового дивану з The Cozy Corner!" – Олена, Київ.</li>
@@ -48,6 +60,7 @@
             <li>"Новий диван і крісла стали улюбленим місцем для відпочинку." – Сергій, Львів.</li>
             <li>"Якість меблів на висоті, а ціни приємно здивували!" – Олексій, Львів.</li>
         </ul>
+
         <h2>Наші принципи</h2>
         <ol>
             <li>Якість товару</li>
@@ -56,28 +69,24 @@
             <li>Екологічність</li>
             <li>Інновації</li>
         </ol>
+
         <h2>Форма зворотного зв'язку</h2>
         <form action="/submit-feedback" method="post">
             <label for="name">Ваше ім'я:</label><br>
             <input type="text" id="name" name="name" required><br><br>
-    
+
             <label for="email">Ваш email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
-    
+
             <label for="message">Повідомлення:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
+
             <input type="submit" value="Надіслати">
         </form>
-    <br>
-    <a href="./description.html">Опис предметної галузі</a>
+    </main>
+
+    <footer>
+        <a href="./description.html">Опис предметної галузі</a>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-    
-
-   
